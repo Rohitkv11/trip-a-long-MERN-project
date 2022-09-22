@@ -1,14 +1,16 @@
-import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
-import Homepage from '../components/HomePage/HomePage'
+import React from "react";
+import Navbar from "../components/Navbar/Navbar";
+import Homepage from "../components/HomePage/HomePage";
+import Date from "../components/Date/Date";
 
 function HomePage() {
   return (
     <div>
-<Navbar />
-<Homepage />
+      <Navbar />
+      <Homepage />
+      {/* <Date /> */}
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;

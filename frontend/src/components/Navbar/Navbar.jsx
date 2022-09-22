@@ -10,6 +10,7 @@ function Navbar() {
   const dispatch = useDispatch()
   const {user} = useSelector((state)=>state.auth)
   const onLogout = () => {
+    console.log("logoutttttttttt");
     dispatch(logout())
     dispatch(reset())
     navigate('/')
@@ -19,7 +20,7 @@ const navRef = useRef();
     navRef.current.classList.toggle("responsive_nav");
   };
   return (
-    <header >
+    <header>
       <h3>Trip A Long</h3>
       <nav ref={navRef}>
         {user ? (<button className="btn" onClick={onLogout}>Logout</button>) : (<><a href="#"> Rent Your Car</a>

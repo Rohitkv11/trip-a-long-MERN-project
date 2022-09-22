@@ -90,7 +90,7 @@ export const otpSent = async (req, res) => {
     } else {
       console.log("twilioooooooooo");
       console.log(process.env.SID);
-      console.log(sid);
+      // console.log(sid);
       let client = new twilio(
         `${process.env.SID}`,
         `${process.env.AUTH_TOKEN}`
@@ -139,6 +139,6 @@ export const login = async (req, res, next) => {
     const { password,...others } = user._doc
     res.status(201).json({ user: others, token, created: true });
   } catch (error) {
-    return res.status(500).json(errors);
+    return res.status(500).json(error);
   }
 };

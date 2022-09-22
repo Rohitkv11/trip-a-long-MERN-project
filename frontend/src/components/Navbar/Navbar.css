@@ -6,6 +6,7 @@ padding: 0;
 }
 
 header{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,6 +77,9 @@ right: 2rem;
      
 }
 .btn{
+    position:absolute;
+    top:32px;
+    right: 50px;
     background: transparent;
     color: white;
     font-family: 'Raleway', sans-serif;
